@@ -1,10 +1,21 @@
 
 let ducInfor = {
-    name: "duc"
+    name: "duc",
+    address: {
+        city: "ha noi"
+    }
 }
 
-let dungInfo = ducInfor;
-dungInfo.name = "manh";
+let dungInfor = {
+    name: "dung",
+    address: ducInfor.address
+}
 
-// 
-console.log(ducInfor.name);
+// edit infor dung
+dungInfor.name = "manh";
+dungInfor.address.city = "ho chi minh";
+
+// thong tin cua duc
+console.log(ducInfor.name); // 
+console.log(ducInfor.address.city); //  
+
