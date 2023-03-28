@@ -7,7 +7,7 @@ let ducInfor = {
 }
 
 let dungInfor = {
-    name: "dung",
+    name: ducInfor.name,
     address: ducInfor.address
 }
 
