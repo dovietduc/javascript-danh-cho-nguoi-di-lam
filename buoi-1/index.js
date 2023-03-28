@@ -1,7 +1,12 @@
-let x = 10;
-let y = x;
+// kieu du lieu object
 
-y = 12;
+console.log(typeof({}));
 
-console.log('x', x);
-console.log('y', y);
+let userInfor = {
+    name: "ducdo",
+    address: "hanoi"
+};
+
+console.log(userInfor);
+console.log(userInfor.name);
+console.log(userInfor.address);
