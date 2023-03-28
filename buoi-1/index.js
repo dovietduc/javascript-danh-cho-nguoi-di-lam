@@ -1,12 +1,10 @@
-// kieu du lieu object
 
-console.log(typeof({}));
+let ducInfor = {
+    name: "duc"
+}
 
-let userInfor = {
-    name: "ducdo",
-    address: "hanoi"
-};
+let dungInfo = ducInfor;
+dungInfo.name = "manh";
 
-console.log(userInfor);
-console.log(userInfor.name);
-console.log(userInfor.address);
+// 
+console.log(ducInfor.name);
