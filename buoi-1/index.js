@@ -1,21 +1,19 @@
+// 1. pass by value --- kieu du lieu nguyen thuy
+// 2. pass by reference --- kieu du lieu object
 
-let ducInfor = {
-    name: "duc",
-    address: {
-        city: "ha noi"
-    }
+
+function changeName(nameChange) {
+    // let nameChange = nameinfor;
+    nameChange.name = "dung";
 }
 
-let dungInfor = {
-    name: ducInfor.name,
-    address: ducInfor.address
-}
+let nameinfor = {
+    name: "ducdo"
+};
+changeName(nameinfor);
 
-// edit infor dung
-dungInfor.name = "manh";
-dungInfor.address.city = "ho chi minh";
+// 
+console.log('nameinfor', nameinfor);
 
-// thong tin cua duc
-console.log(ducInfor.name); // 
-console.log(ducInfor.address.city); //  
 
+// object type --- mutation
