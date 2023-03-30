@@ -1,29 +1,8 @@
 // 1. Khai báo biến với từ khoá var (truước khi có es6)
 
-// 1.1 Với từ khoá var biến có thể được khai báo lại trong cùng 1 scope
-// var x = 5;
-// var x = 10;
+    // 1.1 Với từ khoá var biến có thể được khai báo lại trong cùng 1 scope
 
-// console.log(x);
-
-// 1.2 khi nói đến từ khoá var thì các bạn nghĩ đến ngay function scope
-// var y = 10;
-// if(true) {
-//     var y = 20;
-// }
-// console.log(y);
-
-
-var name = "global scope";
-
-function inner() {
-    var name = "local scope innner function";
-    if(true) {
-        var name = "local scope innner function in IF";
-    }
-    console.log('name', name);
-}
-inner();
+    // 1.2 khi nói đến từ khoá var thì các bạn nghĩ đến ngay function scope
 
 
 
@@ -31,4 +10,28 @@ inner();
 
 // 2. khai báo biến với từ khoá let, cont(es6)
 
+    // 2.1 Với từ khoá let biến không thể được khai báo lại trong cùng 1 scope
+    // let x = 10;
+    // let x = 20;
+
+    // 2.2 khi nói đến từ khoá let thì các bạn nghĩ đến ngay block scope
+    // let y = 20;
+    // if(true) {
+    //     let y = 30;
+    //     console.log('y in if', y);
+    // }
+    // console.log('y', y);
+
+    let name = "global scope";
+
+    function inner() {
+        let name = "local scope in inner function";
+        if(true) {
+            let name = "local scope in inner function IN IF";
+        }
+        console.log('name', name);
+    }
+
+    inner();
+   
 
