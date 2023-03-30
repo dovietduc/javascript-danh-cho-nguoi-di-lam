@@ -22,14 +22,18 @@
     // }
     // console.log('y', y);
 
-    let name = "global scope";
+    // let nameInfor = "global scope";
 
     function inner() {
-        let name = "local scope in inner function";
+
+        // let name = "local scope in inner function";
+
         if(true) {
-            let name = "local scope in inner function IN IF";
+            // let name = "local scope in inner function IN IF";
+            console.log('name in if', nameInfor);
         }
-        console.log('name', name);
+
+        // console.log('name', name);s
     }
 
     inner();
